@@ -1,0 +1,19 @@
+extends layouts/layout
+
+block vars
+  -title = 'Homepage'
+  -bodyClass = 'home'
+  -menuIndex = 0
+
+block container
+  .inner
+    section#main
+      .row
+        .small-6.column
+          label Username
+        .small-6.column
+          input(type="text")
+        .small-6.column
+          label Password
+        .small-6.column
+          input(type="password")

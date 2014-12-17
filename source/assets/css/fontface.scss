@@ -1,0 +1,16 @@
+// Fontface
+@font-face {font-family: 'fontawesome'; font-weight: normal; font-style: normal;
+    src: url('../fonts/fontawesome-webfont.eot');
+    src: url('../fonts/fontawesome-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/fontawesome-webfont.woff') format('woff'),
+         url('../fonts/fontawesome-webfont.ttf') format('truetype'),
+         url('../fonts/fontawesome-webfont.svg#fontawesome') format('svg');
+}
+
+@font-face {font-family: 'century-gothic-bold'; font-weight: normal; font-style: normal;
+    src: url('../fonts/century-gothic-bold.eot');
+    src: url('../fonts/century-gothic-bold.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/century-gothic-bold.woff') format('woff'),
+         url('../fonts/century-gothic-bold.ttf') format('truetype'),
+         url('../fonts/century-gothic-bold.svg#fontawesome') format('svg');
+}

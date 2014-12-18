@@ -8,21 +8,24 @@ block vars
 block container
   .inner
     section#main
+      .row
+        .large-12.column
+          h1.logo Sutrix HMR
       form(id="form-login", name="form-login", action="#", method="post")
         fieldset
           .row
             .small-6.small-centered.column
               .row
                 .small-2.column
-                   label Username:
+                   label(for="username") Username:
                 .small-10.column
                   input(type="text", name="username", id="username")
           .row
             .small-6.small-centered.column
               .row
                 .small-2.column
-                  label Password:
+                  label(for="pass") Password:
                 .small-10.column
                   input(type="password", name="pass", id="pass")
           .text-center
-            a(href="#", class="button small") ok
+            a(href="#", class="button tiny") ok

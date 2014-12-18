@@ -1,0 +1,5 @@
+mixin breadcrum(addClass, items)
+  ul(class="#{addClass}")
+    each item, key in items
+      li(class=item.active)
+        +link(item.title, item.href, item.text)

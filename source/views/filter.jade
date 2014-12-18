@@ -11,6 +11,10 @@ block container
       .row
         .large-12.column
           h1.logo Sutrix HMR
+      +breadcrum('breadcrumbs', [{'title': 'dashboard', 'href': '#', 'text': 'dashboard', 'active': 'current'}, {'title': 'staff', 'href': '#', 'text': 'staff'}])
+      .panel
+        p.text-left filter
+        +link('add', '#', 'add').text-right
       form(id="form-login", name="form-login", action="#", method="post")
         fieldset
           .row

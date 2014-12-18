@@ -46,12 +46,12 @@ $crumb-slash: "/" !default;
   overflow: hidden;
   margin-#{$default-float}: 0;
   list-style: none;
-  border-style: $crumb-border-style;
-  border-width: $crumb-border-size;
+  // border-style: $crumb-border-style;
+  // border-width: $crumb-border-size;
 
   // We control which background color and border come through.
-  background-color: $crumb-bg;
-  border-color: $crumb-border-color;
+  // background-color: $crumb-bg;
+  // border-color: $crumb-border-color;
 }
 
 // We use this mixin to create breadcrumb styles from list items.
@@ -128,5 +128,5 @@ $crumb-slash: "/" !default;
 
 /* Accessibility - hides the forward slash */
 [aria-label="breadcrumbs"] [aria-hidden="true"]:after {
-  content: "/";
+  content: "|";
   }

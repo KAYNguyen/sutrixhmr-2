@@ -480,7 +480,7 @@ $align-class-breakpoints:
 
         a,
         a:visited { text-decoration: underline;}
-        a[href]:after { content: " (" attr(href) ")"; }
+        // a[href]:after { content: " (" attr(href) ")"; }
 
         abbr[title]:after { content: " (" attr(title) ")"; }
 

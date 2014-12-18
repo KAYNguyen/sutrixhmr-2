@@ -4,12 +4,14 @@
 	min-height: 100%;
 }
 header {
-	.logo {
-		text-transform: uppercase;
-		color: $color-orange;
-		font-size: rem-calc(30);
-		font-family: $century-gothic-bold;
-	}
+	
 }
 #main {
+  .logo {
+    text-transform: uppercase;
+    color: $color-orange;
+    font-size: rem-calc(30);
+    font-family: $century-gothic-bold;
+  }
+  
 }

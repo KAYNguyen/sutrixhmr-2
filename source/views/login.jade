@@ -14,18 +14,18 @@ block container
       form(id="form-login", name="form-login", action="#", method="post")
         fieldset
           .row
-            .small-4.small-centered.column
+            .small-6.small-centered.column
               .row
                 .small-3.column
                    label(for="username", class="right inline") Username:
                 .small-9.column
                   input(type="text", name="username", id="username")
           .row
-            .small-4.small-centered.column
+            .small-6.small-centered.column
               .row
                 .small-3.column
                   label(for="pass", class="right inline") Password:
                 .small-9.column
                   input(type="password", name="pass", id="pass")
           .text-center
-            a(href="#", class="button tiny") ok
+            +link('ok').button.tiny.btn-1

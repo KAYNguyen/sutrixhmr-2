@@ -8,28 +8,52 @@ block vars
 block container
   .inner
     section#main
-      .row
-        .large-12.column
-          h1.logo Sutrix HMR
       +breadcrum('breadcrumbs', [{'title': 'dashboard', 'href': '#', 'text': 'dashboard', 'active': 'current'}, {'title': 'staff', 'href': '#', 'text': 'staff'}])
       .panel
-        p.text-left filter
-        +link('add', '#', 'add').text-right
-      form(id="form-login", name="form-login", action="#", method="post")
+        p.left filter
+        +link('add', '#', 'add').right
+      form(id="form-filter", name="form-filter", action="#", method="post")
         fieldset
           .row
             .small-6.small-centered.column
               .row
                 .small-2.column
-                   label(for="username", class="right inline") Username:
+                   label(for="name", class="right inline") Name:
                 .small-10.column
-                  input(type="text", name="username", id="username")
+                  input(type="text", name="name", id="name")
           .row
             .small-6.small-centered.column
               .row
                 .small-2.column
-                  label(for="pass", class="right inline") Password:
+                  label(for="detp", class="right inline") Department:
                 .small-10.column
-                  input(type="password", name="pass", id="pass")
+                  select(name="detp", id="detp")
+                    option(value="") -- Choose department --
+                    option(value="frontend") Frontend
+                    option(value="qc") QC
+                    option(value="java") Java
           .text-center
-            a(href="#", class="button tiny") ok
+            +link('ok').button.tiny.btn-1
+      .panel
+        p.left Result
+      table
+        thead
+          tr
+            th Fullname
+            th Join date
+            th Skype
+            th Email
+            th Team
+        tbody
+          tr
+            td Nguyen Thi Huyen Tran
+            td 20/10/2010
+            td sutrix.tran.nguyen
+            td tran.nguyen@sutrixmedia.com
+            td Frontend 
+          tr
+            td Pham Thi Huyen Tran
+            td 31/12/2013
+            td sutrix.tran.pham
+            td tran.pham@sutrixmedia.com
+            td Frontend               

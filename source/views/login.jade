@@ -1,0 +1,31 @@
+extends layouts/layout
+
+block vars
+  -title = 'Homepage'
+  -bodyClass = 'home'
+  -menuIndex = 0
+
+block container
+  .inner
+    section#main
+      .row
+        .large-12.column
+          h1.logo Sutrix HMR
+      form(id="form-login", name="form-login", action="#", method="post")
+        fieldset
+          .row
+            .small-6.small-centered.column
+              .row
+                .small-2.column
+                   label(for="username", class="right inline") Username:
+                .small-10.column
+                  input(type="text", name="username", id="username")
+          .row
+            .small-6.small-centered.column
+              .row
+                .small-2.column
+                  label(for="pass", class="right inline") Password:
+                .small-10.column
+                  input(type="password", name="pass", id="pass")
+          .text-center
+            a(href="#", class="button tiny") ok

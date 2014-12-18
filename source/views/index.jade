@@ -7,22 +7,22 @@ block vars
 
 block container
   .inner
-     section#main
+    section#main
       form(id="form-login", name="form-login", action="#", method="post")
         fieldset
           .row
             .small-6.small-centered.column
               .row
                 .small-2.column
-                   label Username
+                   label Username:
                 .small-10.column
-                  input(type="text")
+                  input(type="text", name="username", id="username")
           .row
             .small-6.small-centered.column
               .row
                 .small-2.column
-                  label Password
+                  label Password:
                 .small-10.column
-                  input(type="password")
+                  input(type="password", name="pass", id="pass")
           .text-center
-            +link("ok").button.small.btn-1
+            a(href="#", class="button small") ok

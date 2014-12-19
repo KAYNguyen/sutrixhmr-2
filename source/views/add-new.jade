@@ -18,17 +18,17 @@ block container
               .small-6.column
                 .row
                   .small-3.column
-                     label(for="name", class="right inline") Full name:
+                     label(for="full-name", class="right inline") Full name:
                   .small-9.column
-                    input(type="text", name="name", id="name", value="Nguyen Thi Huyen Tran")
+                    input(type="text", name="full-name", id="full-name", value="Nguyen Thi Huyen Tran")
                 .row
                   .small-3.column
-                     label(for="name", class="right inline") Date of birth:
+                     label(for="date-of-birth", class="right inline") Date of birth:
                   .small-9.column
-                    input(type="date", name="name", id="name", value="21/04/1987")
+                    input(type="text", name="date-of-birth", id="date-of-birth", value="21/04/1987")
                 .row
                   .small-3.column
-                     label(for="name", class="right") Gender:
+                     label(for="gender", class="right") Gender:
                   .small-9.column
                     input(type="radio", name="male", id="male", value="male")
                     label(for="male") Male
@@ -77,8 +77,8 @@ block container
                 label History:
                   textarea
             .row
-              .small-12.column
-                button(type="button", name="add", id="add", value="add")(class="button tiny")
+              .small-12.small-centered.column
+                input(type="submit", name="add", id="add", value="add")(class="button tiny")
 
 
 

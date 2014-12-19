@@ -1,0 +1,60 @@
+extends layouts/layout
+
+block vars
+  -title = 'Homepage'
+  -bodyClass = 'home'
+  -menuIndex = 0
+
+block container
+  .inner
+    section#main
+      .row
+        +breadcrum('breadcrumbs', [{'title': 'dashboard', 'href': '#', 'text': 'dashboard', 'active': 'current'}, {'title': 'staff', 'href': '#', 'text': 'staff'}])
+        .panel
+          span filter
+          +link('add', '#', 'add').right
+        form(id="form-filter", name="form-filter", action="#", method="post")
+          fieldset
+            .row
+              .small-6.small-centered.column
+                .row
+                  .small-2.column
+                     label(for="name", class="right inline") Name:
+                  .small-10.column
+                    input(type="text", name="name", id="name")
+            .row
+              .small-6.small-centered.column
+                .row
+                  .small-2.column
+                    label(for="detp", class="right inline") Department:
+                  .small-10.column
+                    select(name="detp", id="detp")
+                      option(value="") -- Choose department --
+                      option(value="frontend") Frontend
+                      option(value="qc") QC
+                      option(value="java") Java
+            .text-center
+              +link('ok').button.tiny.btn-1
+        .panel
+          span Result
+        table
+          thead
+            tr
+              th Fullname
+              th Join date
+              th Skype
+              th Email
+              th Team
+          tbody
+            tr
+              td Nguyen Thi Huyen Tran
+              td 20/10/2010
+              td sutrix.tran.nguyen
+              td tran.nguyen@sutrixmedia.com
+              td Frontend
+            tr
+              td Pham Thi Huyen Tran
+              td 31/12/2013
+              td sutrix.tran.pham
+              td tran.pham@sutrixmedia.com
+              td Frontend

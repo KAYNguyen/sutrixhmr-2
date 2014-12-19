@@ -91,37 +91,44 @@ block container
             .small-3.column Join date:
             .small-9.column 30/01/2010
         .small-6.column
-          .block-image.right
+          .block-image
             +img('images/image.jpg', 'image')
+            input(type="file", name="chose-image", id="chose-image")
+          .block-note
+            em.ico-camera &nbsp;
+            .guide-note
+              p choose image <br> format available JPG, PNG, GIF
       .row
         h2 History:
         .panel
           .title
             span 20/10/2010
-            +link('x', '#', 'x').right.btn-remove
+            +link('x', '#').right.btn-remove
           .desc
             p KAY kute qua di h0h0
         .panel
           .title
             span 20/10/2010
-            +link('x', '#', 'x').right.btn-remove
+            +link('x', '#').right.btn-remove
           .desc
             p Ha Lam Hong Link
         .panel
           .title
             span 20/10/2010
-            +link('x', '#', 'x').right.btn-remove
+            +link('x', '#').right.btn-remove
           .desc
             p Tran Ba Dao
         .panel
           .title
             span 20/10/2010
-            +link('x', '#', 'x').right.btn-remove
+            +link('x', '#').right.btn-remove
           .desc
             p Nguyen Viet Bao Trinh
-      .row
-        .small-12.column
-          textarea
-      .text-center
-        input(type="submit", name="add", id="add", value="Add")(class="button tiny")
+      form(id="form-filter", name="form-filter", action="#", method="post")
+        fieldset
+          .row
+            .small-12.column
+              textarea
+          .text-center
+            input(type="submit", name="add", id="add", value="Add")(class="button tiny")
 

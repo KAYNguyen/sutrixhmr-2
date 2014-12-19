@@ -11,50 +11,74 @@ block container
       .row
         +breadcrum('breadcrumbs', [{'title': 'dashboard', 'href': '#', 'text': 'dashboard', 'active': 'current'}, {'title': 'staff', 'href': '#', 'text': 'staff'}])
         .panel
-          span filter
-          +link('add', '#', 'add').right
+          span staff information
         form(id="form-filter", name="form-filter", action="#", method="post")
           fieldset
             .row
-              .small-6.small-centered.column
+              .small-6.column
                 .row
-                  .small-2.column
-                     label(for="name", class="right inline") Name:
-                  .small-10.column
-                    input(type="text", name="name", id="name")
+                  .small-3.column
+                     label(for="name", class="right inline") Full name:
+                  .small-9.column
+                    input(type="text", name="name", id="name", value="Nguyen Thi Huyen Tran")
+                .row
+                  .small-3.column
+                     label(for="name", class="right inline") Date of birth:
+                  .small-9.column
+                    input(type="date", name="name", id="name", value="21/04/1987")
+                .row
+                  .small-3.column
+                     label(for="name", class="right") Gender:
+                  .small-9.column
+                    input(type="radio", name="male", id="male", value="male")
+                    label(for="male") Male
+                    input(type="radio", name="female", id="female", value="female")
+                    label(for="female") Female
+                .row
+                  .small-3.column
+                    lable(for="address", class="right inline") Address:
+                  .small-9.column
+                    input(type="text", value="10 Tran Quoc Toan, P7, Q3, TPHCM", name="address", id="address")
+                .row
+                  .small-3.column
+                    label(for="code", class="right inline") Id:
+                  .small-9.column
+                    input(type="number", value="371168456", name="code", id="code")
+                .row
+                  .small-3.column
+                    label(for="phone", class="right inline") Mobile:
+                  .small-9.column
+                    input(type="number", value="01234 12 34 56", name="phone", id="phone")
+                .row
+                  .small-3.column
+                    label(for="skype", class="right inline") Skype:
+                  .small-9.column
+                    input(type="text", value="sutrix.tran.nguyen", name="skype", id="skype")
+                .row
+                  .small-3.column
+                    label(for="email", class="right inline") Email:
+                  .small-9.column
+                    input(type="text", value="tran.nguyen@sutrixmedia.com", name="email", id="email")
+                .row
+                  .small-3.column
+                    label(for="join-date", class="right inline") Join date:
+                  .small-9.column
+                    input(type="date", value="30/01/2010", name="join-date", id="join-date")
+              .small-6.column
+                .block-image
+                  +img('images/image.jpg', 'image')
+                  input(type="file", name="chose-image", id="chose-image")
+                .block-note
+                  em.ico-camera &nbsp;
+                  .guide-note
+                    p choose image <br> format available JPG, PNG, GIF
             .row
-              .small-6.small-centered.column
-                .row
-                  .small-2.column
-                    label(for="detp", class="right inline") Department:
-                  .small-10.column
-                    select(name="detp", id="detp")
-                      option(value="") -- Choose department --
-                      option(value="frontend") Frontend
-                      option(value="qc") QC
-                      option(value="java") Java
-            .text-center
-              +link('ok').button.tiny.btn-1
-        .panel
-          span Result
-        table
-          thead
-            tr
-              th Fullname
-              th Join date
-              th Skype
-              th Email
-              th Team
-          tbody
-            tr
-              td Nguyen Thi Huyen Tran
-              td 20/10/2010
-              td sutrix.tran.nguyen
-              td tran.nguyen@sutrixmedia.com
-              td Frontend
-            tr
-              td Pham Thi Huyen Tran
-              td 31/12/2013
-              td sutrix.tran.pham
-              td tran.pham@sutrixmedia.com
-              td Frontend
+              .small-12.column
+                label History:
+                  textarea
+            .row
+              .small-12.column
+                button(type="button", name="add", id="add", value="add")(class="button tiny")
+
+
+

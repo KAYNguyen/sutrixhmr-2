@@ -58,3 +58,70 @@ block container
               td sutrix.tran.pham
               td tran.pham@sutrixmedia.com
               td Frontend
+      .row
+        .panel
+          span Staff Information
+          +link('Edit', '#', 'Edit').right
+         .small-6.column
+          .row
+            .small-3.column Full name:
+            .small-9.column Nguyen Thi Huyen Tran
+          .row
+            .small-3.column Date of birth:
+            .small-9.column 21/04/1987
+          .row
+            .small-3.column Gender:
+            .small-9.column Female
+          .row
+            .small-3.column Address:
+            .small-9.column 10 Tran Quoc Toan, P7, Q3, TPHCM
+          .row
+            .small-3.column Id:
+            .small-9.column 371168456
+          .row
+            .small-3.column Mobile:
+            .small-9.column 01234 12 34 56
+          .row
+            .small-3.column Skype:
+            .small-9.column sutrix.tran.nguyen
+          .row
+            .small-3.column Email:
+            .small-9.column tran.nguyen@sutrixmedia.com
+          .row
+            .small-3.column Join date:
+            .small-9.column 30/01/2010
+        .small-6.column
+          .block-image.right
+            +img('images/image.jpg', 'image')
+      .row
+        h2 History:
+        .panel
+          .title
+            span 20/10/2010
+            +link('x', '#', 'x').right.btn-remove
+          .desc
+            p KAY kute qua di h0h0
+        .panel
+          .title
+            span 20/10/2010
+            +link('x', '#', 'x').right.btn-remove
+          .desc
+            p Ha Lam Hong Link
+        .panel
+          .title
+            span 20/10/2010
+            +link('x', '#', 'x').right.btn-remove
+          .desc
+            p Tran Ba Dao
+        .panel
+          .title
+            span 20/10/2010
+            +link('x', '#', 'x').right.btn-remove
+          .desc
+            p Nguyen Viet Bao Trinh
+      .row
+        .small-12.column
+          textarea
+      .text-center
+        input(type="submit", name="add", id="add", value="Add")(class="button tiny")
+

@@ -1,1 +1,84 @@
-// Plugin
+.chart {
+  height: 525px;
+  position: relative;
+    .graph {
+    height: 500px;
+    position: relative;
+  }
+}
+/* X-Axis */
+.x-axis {
+  position: absolute;
+  bottom: -5px;
+  left: 3px;
+  color: #555;
+  text-align: center;
+  width: 630px;
+  li {
+    float: left;
+    margin: 0 14px;
+    padding: 5px 0;
+    width: 76px;
+  }
+}
+
+/* Y-Axis */
+.y-axis {
+  color: #555;
+  position: absolute;
+  bottom: 25px;
+  left: -64px;
+  text-align: right;
+  width: 100%;
+  li {
+    display: block;
+    height: 50px;
+    width: 100%;
+    span {
+      border-bottom: 1px solid #ccc;
+      display: table-cell;
+      vertical-align: bottom;
+      margin: -2px 0 0 -60px;
+      padding: 0 4px;
+      width: 64px;
+      height: 50px;
+    }
+  }
+}
+
+/* Graph Bars */
+.bars {
+  height: 500px;
+  position: absolute;
+  width: 100%;
+  z-index: 10;
+}
+.bar-group {
+  float: left;
+  height: 100%;
+  margin: 0 12px;
+  position: relative;
+  width: 79px;
+}
+.bar {
+  bottom: 0;
+  height: 0;
+  position: absolute;
+  text-align: center;
+  width: 90px;
+  left: 0;
+  background: #DFDFDF;
+  span {
+    margin-top: -15px;
+    position: relative;
+    left: 23px;
+    width: 40px;
+    z-index: 20;
+  }
+  &.active {
+    background: #FF8A00;
+    span {
+      display: block;
+    }
+  }
+}
